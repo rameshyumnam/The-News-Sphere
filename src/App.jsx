@@ -14,7 +14,7 @@ const App = () => {
   const searchNews = async (query) => {
     setIsLoading(true);
     try {
-      const url = `https://newsapi.org/v2/everything?q=${query}&sortBy=publishedAt&apiKey=82f08cbc0e404067a3fed7dbfa36e6e6`
+      const url = `https://gnews.io/api/v4/search?q=${query}&max=30&apikey=98e7a37bd3d3a644667e18d94b9cc259`
       const res = await fetch(url);
       const resData = await res.json();
       console.log(resData);

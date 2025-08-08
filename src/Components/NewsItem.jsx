@@ -5,10 +5,10 @@ import "./NewsItem.css";
 const NewsItem = ({ article }) => {
     const {
         title,
-        urlToImage,
+        image,
         description,
-        url,
         source,
+        url,
         publishedAt,
     } = article;
 
@@ -23,7 +23,7 @@ const NewsItem = ({ article }) => {
 
   return (
     <div className='news-card'>
-      <img src={urlToImage} alt={title} />
+      <img src={image} alt={title} />
       <div className="article">
         <h3>{shortDescription(title)}</h3>
         <p>{new Date(publishedAt).toLocaleString()}/{source.name}</p>
