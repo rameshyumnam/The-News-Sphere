@@ -19,7 +19,7 @@ body {
   text-align: center;
   justify-content: center;
   align-items: center;
-  background: url(/public/background.png);
+  background: url('/background.png');
   padding: 20px 10px;
   position: sticky;
   top: -130px;
